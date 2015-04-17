@@ -27,9 +27,13 @@ body{
   text-align: center;
 }
 
+img.logo-image-sizing {
+  height: auto;
+  width: 250px;
+}
 /* Nav */
 a {
-font-size: 1.5em;
+font-size: 1em;
 color: #990000 ;
 }
 
@@ -65,4 +69,16 @@ color: #990000 ;
 
 .teal-text {
   color: #00cfcf;
+}
+
+/*Bottom Links*/
+
+div.bottom-links ul li {
+  text-decoration: none;
+  display: inline;
+}
+
+div.bottom-links ul li a {
+  color: white;
+
 }
