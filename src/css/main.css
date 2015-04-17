@@ -22,15 +22,35 @@ body{
   font-size: 2em;
 }
 
+/* Logo Image */ 
+
 .main-top h2{
   color: teal;
   text-align: center;
 }
 
-img.logo-image-sizing {
+#logo-image-sizing {
+  width: 400px;
+  margin: -30px 0px 0px 15px;
   height: auto;
-  width: 250px;
 }
+
+/*Buttons at the top*/
+
+.top-buttons div.buttons div.button,
+.ui.buttons .button:first-child,
+.ui.buttons .button:last-child {
+  border-radius: 30px;
+}
+
+div.four.fluid.ui.buttons {
+  padding-top: 7%;
+}
+
+/* Tag line under those buttons */
+
+
+
 /* Nav */
 a {
 font-size: 1em;
