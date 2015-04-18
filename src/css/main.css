@@ -127,3 +127,22 @@ div.bottom-links ul li a {
   color: white;
 
 }
+
+.green-box {
+  height: 120px;
+  width: 120px;
+  background-color: #e8fdcd;
+  margin-bottom: 14px;
+}
+
+.search-result {
+  display: inline-block;
+  margin: 18px;
+}
+
+.search-result > p {
+  color: #7bb302;
+  font-size: 10px;
+  line-height: 1px;
+  text-align: center;
+}
