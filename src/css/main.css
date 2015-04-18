@@ -153,7 +153,7 @@ color: #990000;
   color: #7BB302;
 }
 
-div.ui.dropdown {
+div.ui.dropdown:not(.ui.vertical.menu>.item:first-child) {
   border: 2px solid #7BB302;
   width: 75px;
   padding: 1px;
@@ -163,7 +163,7 @@ i.dropdown.icon:active > div.menu {
   display: block;
 }
 
-p:first-child {
+.left.aligned.six.wide.column>p:first-child {
   display: inline-block;
   /*margin: 20px 5px 5px 0;*/
 }
