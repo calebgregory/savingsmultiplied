@@ -10,34 +10,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/components/api.min.js"/>
     <link rel="stylesheet" href="/css/main.css">
   </head>
-  <body>
-<!--Beginning of main top-->
 
+  <body>
+
+<!--Beginning of main top-->
     <div class="main-top ui grid">
       <div class="fourteen wide column topmost-column">
         <div class="top-sign-in four wide column">sign in | sign up</div>
       </div>
       <div class="fourteen wide centered column top-nav">
         <div class="sixteen wide centered column">
-            <div class="ui grid">
-              <div class="row">
-                <div class="title six wide column">
-                  <img class="image" id="logo-image-sizing" src="imgs/images/savings-multiplied-logo.png" alt=""/>
+          <div class="ui grid">
+            <div class="row">
+              <div class="title six wide column">
+                <img class="image" id="logo-image-sizing" src="imgs/images/savings-multiplied-logo.png" alt=""/>
+              </div>
+              <div class="top-buttons ten wide column">
+                <div class="four fluid ui buttons">
+                  <div class="ui teal button">About</div>
+                  <div class="ui green button">Contact</div>
+                  <div class="ui purple button">Blog</div>
+                  <div class="ui pink button">Press</div>
                 </div>
-                <div class="top-buttons ten wide column">
-                  <div class="four fluid ui buttons">
-                    <div class="ui teal button">About</div>
-                    <div class="ui green button">Contact</div>
-                    <div class="ui purple button">Blog</div>
-                    <div class="ui pink button">Press</div>
-                  </div>
-                  <img id="tagline-img" src="imgs/images/tagline.png">
-                </div>
+                <img id="tagline-img" src="imgs/images/tagline.png">
               </div>
             </div>
+          </div>
         </div>
       </div>
-    </div><!--End of main-top-->
+    </div> <!--End of main-top-->
 
 <!--Beginning of navigation span-->
 
@@ -81,23 +82,24 @@
           </div> <!--/.ui horizontal list-->
         </div> <!--/.ui fourteen wide centered column-->
       </div> <!--/.ui grid-->
-    </div><!--/.ui vertical segment-->
+    </div><!--/.ui vertical segment navbar-->
 
-  <div class="ui vertical segment navbarmenu">
-    <ul class="nav-bar">
-      <li>Buy</li>
-      <li>Sell</li>
-      <li>How it Works</li>
-      <li>Links</li>
-      <li>Community</li>
-      <li>
-        <div class="ui search">
-          <input class="prompt" type="text" placeholder="search">
-          <div class="results"></div>
-        </div>
-      </li>
-    </ul>
-  </div>
+    <!--Trying out a different approach to building the navbar-->
+    <div class="ui vertical segment navbarmenu">
+      <ul class="nav-bar">
+        <li>Buy</li>
+        <li>Sell</li>
+        <li>How it Works</li>
+        <li>Links</li>
+        <li>Community</li>
+        <li>
+          <div class="ui search">
+            <input class="prompt" type="text" placeholder="search">
+            <div class="results"></div>
+          </div>
+        </li>
+      </ul>
+    </div> <!--/.ui.vertical.segment.navbarmenu-->
 
 <!--End of navigation span-->
 
@@ -232,7 +234,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> <!--/.ui.grid-->
                 <label for="type">Type:</label>
                 <div class="ui grid">
                   <div class="one wide column">
@@ -262,9 +264,14 @@
                           <input type="radio" name="type">
                           <label>Bottoms</label>
                         </div>
-            <div class="four wide column">
-            </div>
-            <div class="twelve wide column">
+                      </div>
+                    </div>
+                  </div>
+                </div> <!--/ui.grid-->
+              </form> <!--/ div insanity - please god let it be over -->
+            </div> <!--/.five.wide.column-->
+
+            <div class="eleven wide column">
               <div class="ui grid">
                 <div class="right floated fourteen wide column results-navigator">
 <!-- This is the bread crumb -->
@@ -291,7 +298,7 @@
                           <div class="item">Relevance</div>
                         </div>
                       </div>
-                    </div>
+                    </div> <!--.left.aligned.six.wide.column-->
   <!-- breadcrumb the second -->
                     <div class="right aligned ten wide column">
                       <div class="ui breadcrumb page-turner">
@@ -317,8 +324,7 @@
                     </div>
                   </div>
                 </div>
-              </form>
-            </div><!-- Four wide column (left side of body)-->
+              </div><!-- Four wide column (left side of body)-->
             <div class="eleven wide column">
               <div class="row">
               </div>
