@@ -1,4 +1,3 @@
-
 body{
   overflow-x:hidden;
 }
@@ -31,22 +30,77 @@ img.logo-image-sizing {
   height: auto;
   width: 250px;
 }
-/* Nav */
-a {
-font-size: 1em;
-color: #990000 ;
+
+/* Navigation bar */
+
+.ui.grid {
+  padding-bottom: -10px;
 }
 
+.navbar .ui.grid {
+  background-color: #f4cbd3;
+  padding-top: -15px;
+}
+
+.ui.fourteen.wide.centered.column {
+  height: 60px;
+  width: 100%;
+}
+
+.ui.horizontal.list {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.ui.fourteen.wide.centered.column div.list div.item {
+  padding: 0 4%;
+  margin: 0 auto;
+}
+
+.ui.fourteen.wide.centered.column div.list div.item:last-child {
+  padding-right: 0;
+}
+
+.ui.fourteen.wide.centered.column div.ui.horizontal.list div.item div.content a {
+  font-family: chunkfiveroman;
+  font-size: 1.25em;
+  text-decoration: none;
+  color: #6e1348; /* come back */
+}
+
+.navbarmenu {
+  display: table;
+  width: 100%;
+}
+
+.navbarmenu > ul {
+  display: table-row;
+  width: 100%;
+}
+
+.navbarmenu > ul > li {
+  display: table-cell;
+  width: 1%;
+}
+
+.navbarmenu > ul > li > div.ui.search {
+  max-width: 177px;
+  margin-right: 0;
+}
+
+.navbarmenu > ul > li:last-child {
+  max-width: 177px;
+}
 
 /* bottom */
 
 .bottom-background {
- background-color: #00cfcf; 
+  background-color: #00cfcf;
 }
 
 .bottom-container {
- background-color: white;
- border-radius: 0 0 50px 50px;
+  background-color: white;
+  border-radius: 0 0 50px 50px;
 }
 
 .main-bottom {
