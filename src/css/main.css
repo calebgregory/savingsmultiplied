@@ -14,6 +14,11 @@ body{
 
 .top-sign-in{
   text-align: right;
+  color: #0f969f;
+}
+
+body div div.topmost-column {
+  margin-top: 40px;
 }
 
 
@@ -21,14 +26,17 @@ body{
   font-size: 2em;
 }
 
+/* Logo Image */
+
 .main-top h2{
   color: teal;
   text-align: center;
 }
 
-img.logo-image-sizing {
+#logo-image-sizing {
+  width: 100%;
+  margin: -30px 0px 0px 15px;
   height: auto;
-  width: 250px;
 }
 
 /* Navigation bar */
@@ -90,6 +98,79 @@ img.logo-image-sizing {
 
 .navbarmenu > ul > li:last-child {
   max-width: 177px;
+}
+
+/*Buttons at the top*/
+
+.top-buttons div.buttons div.button,
+.ui.buttons .button:first-child,
+.ui.buttons .button:last-child {
+  border-radius: 30px;
+}
+
+div.four.fluid.ui.buttons {
+  padding: 7% 5% 0 0;
+}
+
+.ui.teal.button {
+  background-color: #75cbd1;
+}
+
+.ui.green.button {
+  background-color: #87c380;
+}
+
+.ui.purple.button {
+  background-color: #702c8e;
+}
+
+.ui.pink.button {
+  background-color: #c156ba;
+}
+
+/* Tag line under those buttons */
+
+#tagline-img {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
+
+/* Nav */
+a {
+font-size: 1em;
+color: #990000;
+}
+
+/*Bread Crumb and Dropdown Styles*/
+
+.results-navigator {
+  margin: 0 20px -15px auto;
+  color: #7BB302;
+}
+
+.ui.breadcrumb a.section {
+  color: #7BB302;
+}
+
+div.ui.dropdown {
+  border: 2px solid #7BB302;
+  width: 75px;
+  padding: 1px;
+}
+
+i.dropdown.icon:active > div.menu {
+  display: block;
+}
+
+p:first-child {
+  display: inline-block;
+  /*margin: 20px 5px 5px 0;*/
+}
+
+.page-turner > a,
+.page-turner > p {
+  display: inline-block;
 }
 
 /* bottom */

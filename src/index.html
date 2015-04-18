@@ -7,30 +7,34 @@
     <title>"Savings Multiplied"</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css">
     <link rel="stylesheet" href="/type/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/components/api.min.js"/>
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
 <!--Beginning of main top-->
 
     <div class="main-top ui grid">
-
-      <div class="top-sign-in ten wide centered column">sign in | sign up</div>
-
-      <div class="top-nav ten wide centered column">
-
-        <div class="ui two column grid">
-          <div class="title column">
-            <img class="ui small left floated image logo-image-sizing" src="imgs/images/savings-multiplied-logo.png" alt="" />
-          </div>
-          <div class="top-buttons column">
-            <div class="four fluid ui buttons">
-              <div class="ui teal button">About</div>
-              <div class="ui green button">Contact</div>
-              <div class="ui purple button">Blog</div>
-              <div class="ui pink button">Press</div>
+      <div class="fourteen wide column topmost-column">
+        <div class="top-sign-in four wide column">sign in | sign up</div>
+      </div>
+      <div class="fourteen wide centered column top-nav">
+        <div class="sixteen wide centered column">
+            <div class="ui grid">
+              <div class="row">
+                <div class="title six wide column">
+                  <img class="image" id="logo-image-sizing" src="imgs/images/savings-multiplied-logo.png" alt=""/>
+                </div>
+                <div class="top-buttons ten wide column">
+                  <div class="four fluid ui buttons">
+                    <div class="ui teal button">About</div>
+                    <div class="ui green button">Contact</div>
+                    <div class="ui purple button">Blog</div>
+                    <div class="ui pink button">Press</div>
+                  </div>
+                  <img id="tagline-img" src="imgs/images/tagline.png">
+                </div>
+              </div>
             </div>
-            <img src="imgs/images/tagline.png">
-          </div>
         </div>
       </div>
     </div><!--End of main-top-->
@@ -99,7 +103,7 @@
 
     <div class="main-bottom">
       <div class="bottom-background ui grid">
-        <div class="bottom-container twelve wide centered column">
+        <div class="bottom-container fourteen wide centered column">
           <div class="ui grid">
             <div class="five wide column">
               <form class="ui form">
@@ -258,6 +262,46 @@
                           <input type="radio" name="type">
                           <label>Bottoms</label>
                         </div>
+            <div class="four wide column">
+            </div>
+            <div class="twelve wide column">
+              <div class="ui grid">
+                <div class="right floated fourteen wide column results-navigator">
+<!-- This is the bread crumb -->
+                  <div class="ui grid">
+                    <div class="breadcrumbs-galore left aligned sixteen wide column">
+                      <div class="ui breadcrumb">
+                        <a class="section"><h3>All</h3></a>
+                        <i class="right chevron icon divider"></i>
+                        <a class="section"><h3>Twin</h3></a>
+                        <i class="right chevron icon divider"></i>
+                        <a class="section"><h3>B/G</h3></a>
+                      </div>
+                    </div>
+  <!-- End of the bread crumb -->
+                    <div class="left aligned six wide column">
+                      <p>sort by:</p>
+                      <div class="ui dropdown">
+                        <div class="text">Price</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                          <div class="item">Price</div>
+                          <div class="item">Rating</div>
+                          <div class="item">Popularity</div>
+                          <div class="item">Relevance</div>
+                        </div>
+                      </div>
+                    </div>
+  <!-- breadcrumb the second -->
+                    <div class="right aligned ten wide column">
+                      <div class="ui breadcrumb page-turner">
+                        <a class="section">prev.</a>
+                        <p>|</p>
+                        <a class="section">page num.</a>
+                        <p>|</p>
+                        <a class="section">next</a>
+                        <p>|</p>
+                        <a class="section">view all</a>
                       </div>
                     </div>
                   </div>
