@@ -82,6 +82,36 @@ font-size: 1em;
 color: #990000;
 }
 
+/*Bread Crumb and Dropdown Styles*/
+
+.results-navigator {
+  margin: 0 20px -15px auto;
+  color: #7BB302;
+}
+
+.ui.breadcrumb a.section {
+  color: #7BB302;
+}
+
+div.ui.dropdown {
+  border: 2px solid #7BB302;
+  width: 75px;
+  padding: 1px;
+}
+
+i.dropdown.icon:active > div.menu {
+  display: block;
+}
+
+p:first-child {
+  display: inline-block;
+  /*margin: 20px 5px 5px 0;*/
+}
+
+.page-turner > a,
+.page-turner > p {
+  display: inline-block;
+}
 
 /* bottom */
 

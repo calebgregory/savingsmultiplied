@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial scale=1">
     <title>"Savings Multiplied"</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/components/api.min.js"/>
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
@@ -16,8 +17,8 @@
       <div class="fourteen wide column topmost-column">
         <div class="top-sign-in four wide column">sign in | sign up</div>
       </div>
-      <div class="fourteen wide centered column">
-        <div class="top-nav sixteen wide centered column">
+      <div class="fourteen wide centered column top-nav">
+        <div class="sixteen wide centered column">
             <div class="ui grid">
               <div class="row">
                 <div class="title six wide column">
@@ -83,13 +84,52 @@
 <!--End of navigation span-->
     <div class="main-bottom">
       <div class="bottom-background ui grid">
-        <div class="bottom-container twelve wide centered column">
+        <div class="bottom-container fourteen wide centered column">
           <div class="ui grid">
             <div class="four wide column">
             </div>
             <div class="twelve wide column">
-              <div class="row">
-                <p>this text right here</p>
+              <div class="ui grid">
+                <div class="right floated fourteen wide column results-navigator">
+<!-- This is the bread crumb -->
+                  <div class="ui grid">
+                    <div class="breadcrumbs-galore left aligned sixteen wide column">
+                      <div class="ui breadcrumb">
+                        <a class="section"><h3>All</h3></a>
+                        <i class="right chevron icon divider"></i>
+                        <a class="section"><h3>Twin</h3></a>
+                        <i class="right chevron icon divider"></i>
+                        <a class="section"><h3>B/G</h3></a>
+                      </div>
+                    </div>
+  <!-- End of the bread crumb -->
+                    <div class="left aligned six wide column">
+                      <p>sort by:</p>
+                      <div class="ui dropdown">
+                        <div class="text">Price</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                          <div class="item">Price</div>
+                          <div class="item">Rating</div>
+                          <div class="item">Popularity</div>
+                          <div class="item">Relevance</div>
+                        </div>
+                      </div>
+                    </div>
+  <!-- breadcrumb the second -->
+                    <div class="right aligned ten wide column">
+                      <div class="ui breadcrumb page-turner">
+                        <a class="section">prev.</a>
+                        <p>|</p>
+                        <a class="section">page num.</a>
+                        <p>|</p>
+                        <a class="section">next</a>
+                        <p>|</p>
+                        <a class="section">view all</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="right aligned column">
                 <div class="search-result pull-left">
