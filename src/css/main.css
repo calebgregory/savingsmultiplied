@@ -101,3 +101,34 @@ div.bottom-links ul li a {
   line-height: 1px;
   text-align: center;
 }
+
+form.ui.form {
+  background-color: #e8fdcd;
+  border-radius: 40px;
+  padding: 14px 14px 50px 14px;
+  margin: 6px -10px 0 20px;
+}
+
+form.ui.form > p:first-of-type {
+  border-bottom: 1px solid green;
+  text-align: center;
+  font-size: 20px;
+}
+
+form.ui.form,
+.ui.form .inline.fields .field>.ui.checkbox label,
+.ui.grid > .column:not(.row),
+.ui.form .grouped.fields>label {
+  font-size: 16px;
+  color: #6bb800;
+}
+
+.grouped.inline.fields {
+  margin-bottom: 30px;
+}
+
+.mini.ui.green.button {
+  margin: 0;
+  border-radius: 20px;
+  text-align: center;
+}
