@@ -15,6 +15,11 @@ body{
 
 .top-sign-in{
   text-align: right;
+  color: #0f969f;
+}
+
+body div div.topmost-column {
+  margin-top: 40px;
 }
 
 
@@ -30,7 +35,7 @@ body{
 }
 
 #logo-image-sizing {
-  width: 400px;
+  width: 100%;
   margin: -30px 0px 0px 15px;
   height: auto;
 }
@@ -44,17 +49,37 @@ body{
 }
 
 div.four.fluid.ui.buttons {
-  padding-top: 7%;
+  padding: 7% 5% 0 0;
+}
+
+.ui.teal.button {
+  background-color: #75cbd1;
+}
+
+.ui.green.button {
+  background-color: #87c380;
+}
+
+.ui.purple.button {
+  background-color: #702c8e;
+}
+
+.ui.pink.button {
+  background-color: #c156ba;
 }
 
 /* Tag line under those buttons */
 
-
+#tagline-img {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
 
 /* Nav */
 a {
 font-size: 1em;
-color: #990000 ;
+color: #990000;
 }
 
 
