@@ -176,7 +176,7 @@ i.dropdown.icon:active > div.menu {
 /* bottom */
 
 .bottom-background {
-  background-color: #00cfcf;
+  background-color: #78cbd1;
 }
 
 .bottom-container {
@@ -203,19 +203,7 @@ i.dropdown.icon:active > div.menu {
 }
 
 .teal-text {
-  color: #00cfcf;
-}
-
-/*Bottom Links*/
-
-div.bottom-links ul li {
-  text-decoration: none;
-  display: inline;
-}
-
-div.bottom-links ul li a {
-  color: white;
-
+  color: #78cbd1;
 }
 
 .green-box {
@@ -266,4 +254,37 @@ form.ui.form,
   margin: 0;
   border-radius: 20px;
   text-align: center;
+}
+
+/*Bottom Links*/
+
+.bottom-links {
+  display: table;
+  margin: 3% auto;
+}
+
+.bottom-links li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.bottom-links li:last-child {
+  padding-right: 40px;
+}
+
+.bottom-links li {
+  text-decoration: none;
+  display: inline;
+  padding-right: 22px;
+}
+
+.bottom-links li a {
+  color: #b6e4e5;
+  font-size: .8em;
+}
+
+.bottom-links li+li a:before {
+  content: '  ';
+  padding-left: 22px;
+  border-left: 1px solid #b6e4e5;
 }
