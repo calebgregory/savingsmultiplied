@@ -3,7 +3,8 @@ body{
 }
 
 .main-top{
-  background-color: #CCEEEC
+  background-color: transparent;
+  /*background-color: #CCEEEC*************************/
 }
 
 .top-nav{
@@ -176,7 +177,8 @@ i.dropdown.icon:active > div.menu {
 /* bottom */
 
 .bottom-background {
-  background-color: #00cfcf;
+  background-color: transparent;
+  /*background-color: #00cfcf;*************************8****/
 }
 
 .bottom-container {
@@ -209,8 +211,10 @@ i.dropdown.icon:active > div.menu {
 /*Bottom Links*/
 
 div.bottom-links ul li {
+  color: white;
   text-decoration: none;
   display: inline;
+  margin: 0 15px;
 }
 
 div.bottom-links ul li a {
@@ -266,4 +270,58 @@ form.ui.form,
   margin: 0;
   border-radius: 20px;
   text-align: center;
+}
+
+body {
+  background: linear-gradient(to bottom, #CCEEEC 0%, #CCEEEC 272px, #00cfcf 273px, #00cfcf 1000px) no-repeat;
+  background-color: #00cfcf;
+}
+
+div.hidden-mobile-form-button > div > h2 > a#refine-button {
+  color: #6bb800;
+  margin-left: 35px;
+}
+
+
+@media screen and (max-width: 768px) {
+  #disappearing-form {
+    display: none;
+  }
+
+  div.hidden-mobile-form-button {
+    background-color: #e8fdcd;;
+  }
+
+  div.hidden-mobile-form-button:hover > form#disappearing-form {
+    display: block;
+  }
+
+  div#disappearing-form:hover {
+    display: block;
+  }
+
+  div.page-turner {
+    float: left;
+  }
+
+  #logo-image-sizing {
+    width: 90%;
+    margin: 0;
+  }
+
+  #tagline-img {
+    margin-bottom: 10px;
+  }
+
+  .green-box {
+  height: 200px;
+  width: 200px;
+
+  }
+
+.search-result > p {
+  font-size: 20px;
+  line-height: 1px;
+  text-align: center;
+  }
 }
