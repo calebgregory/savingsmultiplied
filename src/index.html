@@ -12,15 +12,16 @@
   </head>
 
   <body>
+    <!-- <div class="second-background"></div> -->
 
 <!--Beginning of main top-->
-    <div class="main-top ui grid">
-      <div class="fourteen wide column topmost-column">
+    <div class="ui page stackable grid main-top">
+      <div class="sixteen wide column topmost-column">
         <div class="top-sign-in four wide column">sign in | sign up</div>
       </div>
-      <div class="fourteen wide centered column top-nav">
+      <div class="sixteen wide centered column top-nav">
         <div class="sixteen wide centered column">
-          <div class="ui grid">
+          <div class="ui stackable grid">
             <div class="row">
               <div class="title six wide column">
                 <img class="image" id="logo-image-sizing" src="imgs/images/savings-multiplied-logo.png" alt=""/>
@@ -87,15 +88,14 @@
 
 <!--Beginning of main-bottom-->
     <div class="main-bottom">
-
-      <div class="bottom-background ui grid">
-
-        <div class="bottom-container fourteen wide centered column">
-
-          <div class="ui grid">
-            <div class="five wide column">
-              <form action="#" class="ui form">
-
+      <div class="bottom-background ui page grid">
+        <div class="bottom-container sixteen wide centered column">
+          <div class="ui stackable grid">
+            <div class="five wide column hidden-mobile-form-button">
+              <div class="five wide column">
+                <h2><a id="refine-button">Refine Your Search</a></h2>
+              </div>
+              <form action="#" class="ui form" id="disappearing-form">
                 <p>Limit your search by:</p>
                 <div class="ui icon input">
                   <input type="text">
@@ -279,7 +279,7 @@
               <div class="ui grid">
                 <div class="right floated fourteen wide column results-navigator">
 <!-- This is the bread crumb -->
-                  <div class="ui grid">
+                  <div class="ui stackable grid">
                     <div class="breadcrumbs-galore left aligned sixteen wide column">
                       <div class="ui breadcrumb">
                         <a class="section"><h3>All</h3></a>
@@ -320,7 +320,7 @@
               </div><!--/.ui.grid-->
 
               <div class="eleven wide column">
-                <div class="right aligned column">
+                <div class="left aligned column"> <!-- this is the line that will make the search results fill in from the left-->
                   <div class="search-result pull-left">
                     <div class="green-box">
                     </div>
@@ -338,12 +338,6 @@
                     </div>
                     <p>Sailor Suits $15.00</p>
                     <p>Jane Joe 4 hours</p>
-                  </div>
-                  <div class="search-result pull-left">
-                    <div class="green-box">
-                    </div>
-                    <p>Sailor Suits $15.00</p>
-                    <p>Jane Joe 4  hours</p>
                   </div>
                   <div class="search-result pull-left">
                     <div class="green-box">
@@ -396,10 +390,9 @@
                 </div><!-- End of right-aligned column that holds search results -->
               </div> <!--/.eleven.wide.column-->
             </div> <!-- End of eleven wide column (3/4; right side of the body) -->
+          </div> <!--/.ui.stackable.grid-->
 
-          </div> <!--End of ui grid for bottom container-->
-
-        </div> <!--End of bottom-container-->
+        </div> <!--End of bottom container-->
 
         <div class="ten wide centered column">
           <ul class="bottom-links">
@@ -411,9 +404,7 @@
             <li><a>Link here</a></li>
           </ul>
         </div> <!--End of bottom-links-->
-
-      </div> <!--End of bottom background-->
+      </div> <!--End of bottom-background-->
     </div> <!--End of main-bottom-->
-
   </body>
 </html>
