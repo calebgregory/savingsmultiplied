@@ -3,8 +3,7 @@ body{
 }
 
 .main-top{
-  background-color: transparent;
-  /*background-color: #CCEEEC*************************/
+  background-color: #CCEEEC
 }
 
 .top-nav{
@@ -49,56 +48,70 @@ body div div.topmost-column {
 .navbar .ui.grid {
   background-color: #f4cbd3;
   padding-top: -15px;
+  margin-top: 14px;
 }
 
-.ui.fourteen.wide.centered.column {
+.navbar .ui.grid .ui.fourteen.wide.centered.column {
   height: 60px;
   width: 100%;
+  z-index: 2;
 }
 
 .ui.horizontal.list {
-  width: 100%;
-  margin: 0 auto;
+  width: 80%;
+  padding: 0 1%;
+  margin: 0 14%;
 }
 
-.ui.fourteen.wide.centered.column div.list div.item {
-  padding: 0 4%;
-  margin: 0 auto;
+.navbar .ui.grid .ui.sixteen.wide.centered.column div.list div.item {
+  padding: 0 3%;
 }
 
-.ui.fourteen.wide.centered.column div.list div.item:last-child {
+.navbar .ui.grid .ui.sixteen.wide.centered.column div.list div.item:last-child {
   padding-right: 0;
 }
 
-.ui.fourteen.wide.centered.column div.ui.horizontal.list div.item div.content a {
+.navbar .ui.grid .ui.sixteen.wide.centered.column div.ui.horizontal.list div.item div.content a {
   font-family: chunkfiveroman;
   font-size: 1.25em;
   text-decoration: none;
   color: #6e1348; /* come back */
 }
 
-.navbarmenu {
-  display: table;
+/*Buttons at the top*/
+
+.top-buttons div.buttons div.button,
+.ui.buttons .button:first-child,
+.ui.buttons .button:last-child {
+  border-radius: 30px;
+}
+
+div.four.fluid.ui.buttons {
+  padding: 7% 5% 0 0;
+}
+
+.ui.teal.button {
+  background-color: #75cbd1;
+}
+
+.ui.green.button {
+  background-color: #87c380;
+}
+
+.ui.purple.button {
+  background-color: #702c8e;
+}
+
+.ui.pink.button {
+  background-color: #c156ba;
+}
+
+/* Tag line under those buttons */
+
+#tagline-img {
+  margin-top: 20px;
   width: 100%;
-}
-
-.navbarmenu > ul {
-  display: table-row;
-  width: 100%;
-}
-
-.navbarmenu > ul > li {
-  display: table-cell;
-  width: 1%;
-}
-
-.navbarmenu > ul > li > div.ui.search {
-  max-width: 177px;
-  margin-right: 0;
-}
-
-.navbarmenu > ul > li:last-child {
-  max-width: 177px;
+  height: auto;
 }
 
 /*Buttons at the top*/
@@ -272,17 +285,75 @@ form.ui.form,
   text-align: center;
 }
 
-
-body {
-  background: linear-gradient(to bottom, #CCEEEC 0%, #CCEEEC 272px, #00cfcf 273px, #00cfcf 1000px) no-repeat;
-  background-color: #00cfcf;
+.bottom-links li a {
+  color: #b6e4e5;
+  font-size: .8em;
 }
 
+.bottom-links li+li a:before {
+  content: '  ';
+  padding-left: 22px;
+  border-left: 1px solid #b6e4e5;
+}
+
+@media (max-width: 883px) {
+  #navbar-search {
+    display: none;
+  }
+}
+
+@media (min-width: 884px) and (max-width: 989px) {
+  .ui.horizontal.list {
+    width: 95%;
+    padding: 0 0 0 2%;
+    margin: 0 auto 0 3%;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1093px) {
+  .ui.sixteen.wide.centered.column div.list div.item {
+    padding: 0 2%;
+    margin: 0 auto;
+  }
+
+  .ui.horizontal.list {
+    width: 90%;
+    padding: 0 2%;
+    margin: 0 auto 0 8%;
+  }
+}
+
+@media (min-width: 1094px) and (max-width: 1269px) {
+  .ui.sixteen.wide.centered.column div.list div.item {
+    padding: 0 4.7%;
+    margin: 0 auto;
+  }
+}
+
+/*
+@media (min-width: 1072px) and (max-width: 1335px) {
+  .fourteen.wide.centered.column {
+    width: 962px;
+  }
+}
+
+@media (min-width: 807px) and (max-width: 1071px) {
+  .fourteen.wide.centered.column {
+    width: 731px;
+  }
+}
+
+@media (max-width: 543px) {
+  .fourteen.wide.centered.column {
+    width: 500px;
+  }
+}
+
+*/
 div.hidden-mobile-form-button > div > h2 > a#refine-button {
   color: #6bb800;
   margin-left: 35px;
 }
-
 
 @media screen and (max-width: 768px) {
   #disappearing-form {
@@ -315,14 +386,22 @@ div.hidden-mobile-form-button > div > h2 > a#refine-button {
   }
 
   .green-box {
-  height: 200px;
-  width: 200px;
-
+    height: 148px;
+    width: 148px;
   }
 
-.search-result > p {
-  font-size: 20px;
-  line-height: 1px;
-  text-align: center;
+  .search-result > p {
+    font-size: 18px;
+    line-height: 1px;
+    text-align: center;
+  }
+
+  #bottom-links {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
   }
 }
+
