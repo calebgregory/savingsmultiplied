@@ -1,0 +1,35 @@
+extends _search-column
+
+append _breadcrumb
+    .ui.grid
+      .right.floated.fourteen.wide.column.results-navigator
+        .ui.stackable.grid
+          .breakcrumbs-galore.left.aligned.sixteen.wide.column
+            .ui.breadcrumb
+              a(class='section')
+                h3 All
+              i(class='right chevron icon divider')
+              a(class='section')
+                h3 Twin
+              i(class='right chevron icon divider')
+              a(class='section')
+                h3 B/G
+            .left.aligned.six.wide.column
+              p sort by:
+              .ui.dropdown
+                .text Price
+                i(class='dropdown icon')
+                .menu
+                  .item Price
+                  .item Rating
+                  .item Popularity
+                  .item Relevance
+            .right.aligned.ten.wide.column
+              .ui.breadcrumb.page-turner
+                a(class='section') prev.
+                p |
+                a(class='section') page num.
+                p |
+                a(class='section') next
+                p |
+                a(class='section') view all
