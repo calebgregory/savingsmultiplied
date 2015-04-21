@@ -1,0 +1,199 @@
+extends _layout
+
+block content
+
+            .five.wide.column.hidden-mobile-form-button
+              .five.wide.column
+                h2
+                  a#refine-button(Refine Your Search)
+              form.ui.form#disappearing-form(action="#")
+                p Limit your search by:
+                .ui.icon.input
+                  input(type="text")
+                  i.green.circular.search.icon
+
+                .ui.grid
+                  .five.wide.column
+                    label(for="condition") Condition: 
+                  .eleven.wide.column
+                    .grouped.inline.fields
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="condition", checked)
+                          label New
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="condition")
+                          label Gently used
+                label(for="size") Size:
+                .ui.grid
+                  .one.wide.column
+                  .four.wide.column
+                    .grouped.inline.fields
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="size" checked)
+                          label 4
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="size" checked)
+                          label 5
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="size" checked)
+                          label 6
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="size" checked)
+                          label 7
+                  .four.wide.column
+                    .grouped.inline.fields
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="size" checked)
+                          label 8
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="size" checked)
+                          label 9
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="size" checked)
+                          label 10
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="size" checked)
+                          label 11
+                label(for="season") Season:
+                .ui.grid
+                  .one.wide.column
+                  .nine.wide.column
+                    .grouped.inline.fields
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="season" checked)
+                          label All Seasons
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="season")
+                          label Spring
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="season")
+                          label Summer
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="season")
+                          label Fall
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="season")
+                          label Winter
+                label(for="type") Type:
+                .ui.grid
+                  .one.wide.column
+                  .nine.wide.column
+                    .grouped.inline.fields
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="type" checked)
+                          label Any
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="type")
+                          label One-Piece
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="type" checked)
+                          label Tops
+                      .field
+                        .ui.radio.checkbox
+                          input(type="radio", name="type")
+                          label Bottoms
+                .ui.vertical.menu
+                  .ui.dropdown.item
+                    | Brands
+                    i.green.dropdown.icon
+                    .menu
+                      a.item Jane and Jack
+                      a.item Osh Kosh K'Bosh
+                      a.item Burlap Sack
+            .eleven.wide.column
+              .ui.grid
+                .right.floated.fourteen.wide.column.results-navigator
+                  .ui.stackable.grid
+                    .breadcrumbs-galore.left.aligned.sixteen.wide.column
+                      .ui.breadcrumb
+                        a(class='section')
+                          h3 All
+                        i.right.chevron.icon.divider
+                        a(class='section')
+                          h3 Twin
+                        i(class='right chevron icon divider')
+                        a(class='section')
+                          h3 B/G
+                    .left.aligned.six.wide.column
+                      p sort by:
+                      .ui.dropdown
+                        .text Price
+                        i(class='dropdown icon')
+                        .menu
+                          .item Price
+                          .item Rating
+                          .item Popularity
+                          .item Relevance
+                    .right.aligned.ten.wide.column
+                      .ui.breadcrumb.page-turner
+                        a(class='section') prev.
+                        p |
+                        a(class='section') page num.
+                        p |
+                        a(class='section') next
+                        p |
+                        a(class='section') view all
+              .eleven.wide.column
+                .left.aligned.column
+                  .search-result.pull-left
+                    .green-box
+                    p Sailor Suits $15.00
+                    p Jane Joe 4 hours
+                  .search-result.pull-left
+                    .green-box
+                    p Sailor Suits $15.00
+                    p Jane Joe 4 hours
+                  .search-result.pull-left
+                    .green-box
+                    p Sailor Suits $15.00
+                    p Jane Joe 4 hours
+                  .search-result.pull-left
+                    .green-box
+                    p Sailor Suits $15.00
+                    p Jane Joe 4 hours
+                  .search-result.pull-left
+                    .green-box
+                    p Sailor Suits $15.00
+                    p Jane Joe 4 hours
+                  .search-result.pull-left
+                    .green-box
+                    p Sailor Suits $15.00
+                    p Jane Joe 4 hours
+                  .search-result.pull-left
+                    .green-box
+                    p Sailor Suits $15.00
+                    p Jane Joe 4 hours
+                  .search-result.pull-left
+                    .green-box
+                    p Sailor Suits $15.00
+                    p Jane Joe 4 hours
+                  .search-result.pull-left
+                    .green-box
+                    p Sailor Suits $15.00
+                    p Jane Joe 4 hours
+                  .search-result.pull-left
+                    .green-box
+                    p Sailor Suits $15.00
+                    p Jane Joe 4 hours
+                  .search-result.pull-left
+                    .green-box
+                    p Sailor Suits $15.00
+                    p Jane Joe 4 hours

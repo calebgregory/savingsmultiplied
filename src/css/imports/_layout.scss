@@ -116,8 +116,8 @@ div.four.fluid.ui.buttons {
 
 /* Nav */
 a {
-font-size: 1em;
-color: $nav-color;
+  font-size: 1em;
+  color: $nav-color;
 }
 
 /*Bread Crumb and Dropdown Styles*/
@@ -224,7 +224,7 @@ form.ui.form {
   margin: 6px -10px 0 20px;
 }
 
-form.ui.form { 
+form.ui.form {
   p:first-of-type {
     border-bottom: 1px solid green;
     text-align: center;
@@ -248,6 +248,26 @@ form.ui.form,
   margin: 0;
   border-radius: 20px;
   text-align: center;
+}
+
+.bottom-links {
+  display: table;
+  margin: 3% auto;
+}
+
+.bottom-links li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.bottom-links li:last-child {
+  padding-right: 40px;
+}
+
+.bottom-links li {
+  text-decoration: none;
+  display: inline;
+  padding-right: 22px;
 }
 
 .bottom-links li a {

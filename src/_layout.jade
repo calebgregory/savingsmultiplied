@@ -11,130 +11,69 @@ html
 
   body
     //<div class="second-background"></div>
+    //Beginning of main top
+    .ui.page.stackable.grid.main-top
+      .sixteen.wide.column.topmost-column
+        .top-sign-in.four.wide.column sign in | sign up
+      .sixteen.wide.centered.column.top-nav
+        .ui.stackable.grid
+          .row
+            .title.six.wide.column
+              img.image#logo-image-sizing(src="imgs/images/savings-multiplied-logo.png")
+            .top-buttons.ten.wide.column
+              .four.fluid.ui.buttons
+                .ui.teal.button About
+                .ui.green.button Contact
+                .ui.purple.button Blog
+                .ui.pink.button Press
+              img#tagline-img(src="imgs/images/tagline.png" alt="Where parents of multiples save and share")
+    //Beginning of navigation span
+    .navbar
+      .ui.grid
+        .ui.sixteen.wide.centered.column
+          .ui.horizontal.list
+            .item
+              .content
+                a Buy
+            .item
+              .content
+                a Sell
+            .item
+              .content
+                a How it Works
+            .item
+              .content
+                a Links
+            .item
+              .content
+                a Community
+            .item
+              .content
+                input(
+                  type='text',
+                  class='prompt',
+                  placeholder='search'
+                )
 
     //Beginning of main-bottom
     .main-bottom
       .bottom-background.ui.page.grid
         .bottom-container.sixteen.wide.centered.column
           .ui.stackable.grid
-            .five.wide.column.hidden-mobile-form-button
-              .five.wide.column
-                h2
-                  a#refine-button(Refine Your Search)
-                form.ui.form#disappearing-form(action="#")
-                  p Limit your search by:
-                  .ui.icon.input
-                    input(type="text")
-                    i.green.circular.search.icon
+            //modularize here
+            block content
 
-                  .ui.grid
-                    .five.wide.column
-                      label(for="condition") Condition: 
-                    .eleven.wide.column
-                      .grouped.inline.fields
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="condition", checked)
-                            label New
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="condition")
-                            label Gently used
-                  label(for="size") Size:
-                  .ui.grid
-                    .one.wide.column
-                    .four.wide.column
-                      .grouped.inline.fields
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="size" checked)
-                            label 4
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="size" checked)
-                            label 5
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="size" checked)
-                            label 6
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="size" checked)
-                            label 7
-                    .four.wide.column
-                      .grouped.inline.fields
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="size" checked)
-                            label 8
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="size" checked)
-                            label 9
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="size" checked)
-                            label 10
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="size" checked)
-                            label 11
-                  label(for="season") Season:
-                  .ui.grid
-                    .one.wide.column
-                    .nine.wide.column
-                      .grouped.inline.fields
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="season" checked)
-                            label All Seasons
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="season")
-                            label Spring
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="season")
-                            label Summer
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="season")
-                            label Fall
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="season")
-                            label Winter
-                  label(for="type") Type:
-                  .ui.grid
-                    .one.wide.column
-                    .nine.wide.column
-                      .grouped.inline.fields
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="type" checked)
-                            label Any
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="type")
-                            label One-Piece
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="type" checked)
-                            label Tops
-                        .field
-                          .ui.radio.checkbox
-                            input(type="radio", name="type")
-                            label Bottoms
-                  .ui.vertical.menu
-                    .ui.dropdown.item
-                      p Brands
-                      i.green.dropdown.icon
-                      .menu
-                        a.item Jane and Jack
-                        a.item Osh Kosh K'Bosh
-                        a.item Burlap Sack
-
-
-
-
-
+        .sixteen.wide.centered.column#bottom-links
+          ul.bottom-links
+            li
+              a Link here
+            li
+              a Link here
+            li
+              a Link here
+            li
+              a Link here
+            li
+              a Link here
+            li
+              a Link here
