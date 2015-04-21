@@ -29,7 +29,7 @@ body div div.topmost-column {
 /* Logo Image */
 
 .main-top h2{
-  color: teal;
+  color: $sign-in-color;
   text-align: center;
 }
 
@@ -114,12 +114,6 @@ div.four.fluid.ui.buttons {
   height: auto;
 }
 
-/* Nav */
-a {
-  font-size: 1em;
-  color: $nav-color;
-}
-
 /*Bread Crumb and Dropdown Styles*/
 
 .results-navigator {
@@ -182,20 +176,6 @@ i.dropdown.icon:active > div.menu {
 
 .teal-text {
   color: $bottom-background;
-}
-
-/*Bottom Links*/
-
-div.bottom-links ul li {
-  color: $white;
-  text-decoration: none;
-  display: inline;
-  margin: 0 15px;
-}
-
-div.bottom-links ul li a {
-  color: $white;
-
 }
 
 .green-box {

@@ -21,7 +21,7 @@ body div div.topmost-column {
 
 /* Logo Image */
 .main-top h2 {
-  color: teal;
+  color: #0f969f;
   text-align: center; }
 
 #logo-image-sizing {
@@ -88,11 +88,6 @@ div.four.fluid.ui.buttons {
   width: 100%;
   height: auto; }
 
-/* Nav */
-a {
-  font-size: 1em;
-  color: #990000; }
-
 /*Bread Crumb and Dropdown Styles*/
 .results-navigator {
   margin: 0 20px -15px auto;
@@ -141,16 +136,6 @@ i.dropdown.icon:active > div.menu {
 
 .teal-text {
   color: #00cfcf; }
-
-/*Bottom Links*/
-div.bottom-links ul li {
-  color: #fff;
-  text-decoration: none;
-  display: inline;
-  margin: 0 15px; }
-
-div.bottom-links ul li a {
-  color: #fff; }
 
 .green-box {
   height: 120px;
