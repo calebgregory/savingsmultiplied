@@ -1,6 +1,9 @@
 body {
   overflow-x: hidden; }
 
+#clearer-div {
+  clear: both; }
+
 .main-top {
   background-color: #CCEEEC; }
 
@@ -114,8 +117,7 @@ i.dropdown.icon:active > div.menu {
 
 /* bottom */
 .bottom-background {
-  background-color: #00cfcf;
-  height: 1100px; }
+  background-color: #00cfcf; }
 
 .bottom-container {
   background-color: #fff;
